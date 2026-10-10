@@ -1,902 +1,672 @@
+
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+  <title>VEH4SES® — Creare Site-uri Web și Web Design</title>
+  <meta name="description" content="VEH4SES creează site-uri web pentru afaceri: site-uri de prezentare, redesign, landing pages și magazine online. Design modern și experiențe digitale interactive.">
+  <meta name="robots" content="index, follow">
 
-    <meta
-        name="description"
-        content="VEH4SES — Web Design, Front-End și experiențe web interactive."
-    >
+  <link rel="canonical" href="https://veh4ses.github.io/veh4ses/">
 
-    <title>VEH4SES — Web Developer</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VEH4SES® — Creare Site-uri Web și Web Design">
+  <meta property="og:description" content="Site-uri de prezentare, redesign, landing pages și magazine online pentru afaceri. Descoperă serviciile VEH4SES.">
+  <meta property="og:url" content="https://veh4ses.github.io/veh4ses/">
+  <meta property="og:site_name" content="VEH4SES">
+  <meta property="og:locale" content="ro_RO">
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <div class="site-shell">
 
-    <!-- ========================================
-         CURSOR
-    ======================================== -->
+    <!-- NAVIGATION -->
+    <header class="navbar" id="top">
+      <a class="brand" href="#top" aria-label="VEH4SES — Acasă">
+        VEH4SES<span class="brand-mark">®</span>
+        <span class="brand-dot"></span>
+      </a>
 
-    <div class="cursor-glow"></div>
+      <button class="menu-toggle" type="button"
+        aria-label="Deschide meniul" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+      </button>
 
-
-    <!-- ========================================
-         NAVBAR
-    ======================================== -->
-
-    <header class="navbar">
-
-        <a
-            href="#home"
-            class="logo"
-        >
-            VEH4SES<span>.</span>
+      <nav class="nav-menu" id="nav-menu" aria-label="Navigare principală">
+        <a href="#services">Servicii</a>
+        <a href="#work">Proiecte</a>
+        <a href="#process">Proces</a>
+        <a href="#about-details">Despre</a>
+        <a href="#contact" class="button button-primary">
+          Hai să discutăm <span>↗</span>
         </a>
-
-        <nav>
-
-            <a
-                href="#home"
-                class="active"
-            >
-                Acasă
-            </a>
-
-            <a href="#about">
-                Despre
-            </a>
-
-            <a href="#services">
-                Ce fac
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Deschide meniul"
-            aria-expanded="false"
-        >
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
+      </nav>
     </header>
-
 
     <main>
 
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            WEB DESIGN &amp; DEVELOPMENT
+          </div>
 
-        <!-- ========================================
-             HERO
-        ======================================== -->
+          <h1>
+            Construim site-uri
+            <span class="text-accent">care pun</span>
+            afacerea în valoare.
+          </h1>
 
-        <section
-            id="home"
-            class="hero"
-        >
+          <p class="hero-description">
+            Experiențe digitale moderne, dezvoltate pentru branduri care
+            vor să se prezinte mai bine, să câștige încredere și să atragă
+            noi oportunități.
+          </p>
 
-            <div class="hero-content">
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">
+              Începe un proiect <span>↗</span>
+            </a>
+            <a class="button button-secondary" href="#work">
+              Explorează proiectele <span>↓</span>
+            </a>
+          </div>
 
-                <p class="small-text">
-                    BINE AI VENIT
+          <div class="hero-note">
+            <span class="hero-note-line"></span>
+            De la idee la o prezență online bine construită.
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Compoziție vizuală VEH4SES">
+          <div class="visual-grid"></div>
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+
+          <div class="visual-core">
+            <span class="core-top">DIGITAL EXPERIENCE</span>
+            <span class="core-symbol">V<span>4</span></span>
+            <span class="core-bottom">DESIGNED WITH INTENT</span>
+          </div>
+
+          <div class="floating-label label-top">
+            <span class="label-indicator"></span>
+            DESIGN / 01
+          </div>
+
+          <div class="floating-label label-bottom">
+            <span>STRATEGY</span>
+            <span class="label-divider">/</span>
+            <span>DEVELOPMENT</span>
+          </div>
+
+          <div class="visual-index">V.001</div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>INDEPENDENT DIGITAL STUDIO</span>
+          <span>DESIGN · DEVELOPMENT · EXPERIENCE</span>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION -->
+      <section class="intro section" id="about">
+        <div class="section-label">
+          <span>01</span>
+          <span>CE FACEM</span>
+        </div>
+
+        <div class="intro-content">
+          <h2>
+            Nu doar prezență online.
+            <span class="text-muted">
+              O experiență care transmite profesionalism.
+            </span>
+          </h2>
+
+          <p>
+            Un site bun îți prezintă afacerea clar, funcționează pe orice
+            dispozitiv și îi ajută pe vizitatori să găsească rapid
+            informațiile de care au nevoie.
+          </p>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services section" id="services">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">
+              <span>02</span>
+              <span>SERVICII</span>
+            </div>
+            <h2>Ce putem construi <span class="text-accent">împreună.</span></h2>
+          </div>
+
+          <p>
+            Soluții digitale adaptate obiectivelor și nevoilor afacerii tale.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-number">01 / WEB</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="5" y="7" width="38" height="34" rx="4"/>
+                <path d="M5 16H43M13 12H13.1M18 12H18.1M23 12H23.1"/>
+                <path d="M13 25H30M13 31H25"/>
+              </svg>
+            </div>
+            <h3>Site-uri de prezentare</h3>
+            <p>
+              Prezintă serviciile, valorile și identitatea afacerii tale
+              printr-un site clar, modern și adaptat telefonului.
+            </p>
+            <a href="#contact" class="service-link">
+              Solicită o ofertă <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-number">02 / REFRESH</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect x="6" y="7" width="36" height="34" rx="4"/>
+                <path d="M14 16H34M14 22H26M14 28H31"/>
+                <path d="M32 34L36 38L43 29"/>
+              </svg>
+            </div>
+            <h3>Redesign website</h3>
+            <p>
+              Îmbunătățește aspectul, structura și experiența unui site
+              existent, fără să pierzi din vedere obiectivele afacerii.
+            </p>
+            <a href="#contact" class="service-link">
+              Solicită o ofertă <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-number">03 / CAMPAIGN</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M8 8H40V40H8Z"/>
+                <path d="M14 15H34M14 21H28"/>
+                <path d="M14 32L21 25L27 30L35 22"/>
+              </svg>
+            </div>
+            <h3>Landing pages</h3>
+            <p>
+              Pagini dedicate unei oferte, unui serviciu sau unei campanii,
+              cu un mesaj concentrat și un traseu clar către acțiune.
+            </p>
+            <a href="#contact" class="service-link">
+              Solicită o ofertă <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card-top">
+              <span class="service-number">04 / COMMERCE</span>
+              <span class="service-arrow">↗</span>
+            </div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M7 9H12L16 29H36L41 15H14"/>
+                <circle cx="20" cy="37" r="3"/>
+                <circle cx="33" cy="37" r="3"/>
+                <path d="M19 19H35M22 24H32"/>
+              </svg>
+            </div>
+            <h3>Magazine online</h3>
+            <p>
+              Experiențe de cumpărare intuitive, cu produse prezentate clar
+              și un proces de comandă ușor de parcurs.
+            </p>
+            <a href="#contact" class="service-link">
+              Solicită o ofertă <span>↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- SELECTED WORK -->
+      <section class="work section" id="work">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">
+              <span>03</span>
+              <span>PROIECTE SELECTATE</span>
+            </div>
+            <h2>Idei transformate <span class="text-accent">în experiențe.</span></h2>
+          </div>
+          <p>
+            Concepte și proiecte web care explorează felul în care designul
+            și funcționalitatea pot lucra împreună.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card work-featured">
+            <a href="#contact" class="work-preview preview-auto"
+               aria-label="Discută un proiect de redesign auto">
+              <div class="preview-browser">
+                <div class="browser-bar">
+                  <span></span><span></span><span></span>
+                  <span class="browser-address">nove-auto.ro / concept</span>
+                </div>
+                <div class="auto-preview-content">
+                  <span class="preview-kicker">FIND YOUR NEXT DRIVE</span>
+                  <span class="preview-heading">DRIVE<br>YOUR WAY.</span>
+                  <span class="preview-line"></span>
+                  <span class="preview-caption">AUTOMOTIVE / DIGITAL EXPERIENCE</span>
+                </div>
+              </div>
+              <span class="work-open">↗</span>
+            </a>
+
+            <div class="work-info">
+              <div>
+                <span class="work-category">AUTOMOTIVE · REDESIGN</span>
+                <h3>Nove Auto</h3>
+              </div>
+              <span class="work-type">Concept</span>
+            </div>
+            <p class="work-description">
+              Concept vizual pentru modernizarea experienței unui parc auto.
+              Nu reprezintă un proiect comandat sau aprobat de companie.
+            </p>
+          </article>
+
+          <article class="work-card">
+            <a href="#contact" class="work-preview preview-fitness"
+               aria-label="Discută un concept de website pentru fitness">
+              <div class="fitness-preview-content">
+                <span class="preview-kicker">TRAIN WITH PURPOSE</span>
+                <span class="fitness-preview-title">BUILT<br>BY DISCIPLINE.</span>
+                <span class="fitness-preview-cta">EXPLORE MEMBERSHIPS ↗</span>
+              </div>
+              <span class="work-open">↗</span>
+            </a>
+
+            <div class="work-info">
+              <div>
+                <span class="work-category">FITNESS · WEB DESIGN</span>
+                <h3>Gladiator Fitness</h3>
+              </div>
+              <span class="work-type">Concept</span>
+            </div>
+            <p class="work-description">
+              Direcție vizuală demonstrativă pentru o experiență digitală
+              dedicată unei săli de fitness.
+            </p>
+          </article>
+        </div>
+
+        <div class="work-disclaimer">
+          <span class="status-dot"></span>
+          Proiectele marcate „Concept” sunt demonstrații de design,
+          nu colaborări confirmate.
+        </div>
+      </section>
+
+      <!-- APPROACH -->
+      <section class="approach section">
+        <div class="section-label">
+          <span>04</span>
+          <span>ABORDARE</span>
+        </div>
+
+        <div class="approach-content">
+          <h2>
+            Designul atrage.
+            <span class="text-muted">Claritatea convinge.</span>
+          </h2>
+
+          <div class="approach-points">
+            <div class="approach-point">
+              <span>01</span>
+              <div>
+                <h3>Gândit pentru oameni</h3>
+                <p>
+                  Navigare intuitivă, conținut ușor de înțeles și
+                  experiență adaptată dispozitivelor mobile.
                 </p>
+              </div>
+            </div>
 
-                <h1>
-                    Eu sunt
-                    <span>VEH4SES.</span>
-                </h1>
-
-                <p class="description">
-                    Construiesc experiențe web moderne,
-                    rapide și interactive.
+            <div class="approach-point">
+              <span>02</span>
+              <div>
+                <h3>Construit pentru obiective</h3>
+                <p>
+                  Fiecare secțiune are un scop: să explice, să inspire
+                  încredere sau să faciliteze următorul pas.
                 </p>
-
-                <button
-                    id="exploreButton"
-                    class="hero-button"
-                    type="button"
-                >
-                    Descoperă ↓
-                </button>
-
+              </div>
             </div>
 
-        </section>
-
-
-        <!-- ========================================
-             ABOUT
-        ======================================== -->
-
-        <section
-            id="about"
-            class="section about reveal"
-        >
-
-            <p class="small-text">
-                01 — DESPRE MINE
-            </p>
-
-            <div class="about-content">
-
-                <div class="about-main">
-
-                    <span class="about-label">
-                        NU AM ÎNCEPUT PENTRU CĂ ȘTIAM.
-                    </span>
-
-                    <h2>
-                        Am început pentru că
-                        <span>voiam să aflu.</span>
-                    </h2>
-
-                    <p class="about-description">
-                        Fiecare proiect este o ocazie să învăț ceva nou.
-                        Nu încerc să construiesc doar site-uri care arată bine,
-                        ci experiențe care au un motiv pentru fiecare detaliu.
-                    </p>
-
-                </div>
-
-
-                <div class="about-side">
-
-                    <div class="about-point">
-
-                        <span class="about-number">
-                            01
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                CURIOS
-                            </h3>
-
-                            <p>
-                                Nu mă opresc la „merge”.
-                                Vreau să înțeleg de ce.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <span class="about-number">
-                            02
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                ATENT LA DETALII
-                            </h3>
-
-                            <p>
-                                Animațiile, spațierea, interacțiunile —
-                                lucrurile mici schimbă totul.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <span class="about-number">
-                            03
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                ÎN EVOLUȚIE
-                            </h3>
-
-                            <p>
-                                Nu încerc să par că le știu pe toate.
-                                Încerc să fiu mai bun decât eram ieri.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="about-point">
-
-                        <span class="about-number">
-                            04
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                CONSTRUIESC
-                            </h3>
-
-                            <p>
-                                Ideile devin interesante
-                                abia când ajung să existe.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="about-bottom">
-
-                <span>
-                    CREATIVE
-                </span>
-
-                <span>
-                    CURIOUS
-                </span>
-
-                <span>
-                    DETERMINED
-                </span>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             SERVICES
-        ======================================== -->
-
-        <section
-            id="services"
-            class="section services reveal"
-        >
-
-            <p class="small-text">
-                02 — CE FAC
-            </p>
-
-
-            <div class="services-showcase">
-
-
-                <!-- SERVICES TITLE -->
-
-                <div class="services-title">
-
-                    <h2>
-                        Ce fac.
-                    </h2>
-
-                    <p class="services-description">
-                        De la structură și design până la interacțiuni,
-                        construiesc experiențe web care arată bine
-                        și funcționează corect.
-                    </p>
-
-                </div>
-
-
-                <!-- SERVICES PREVIEW -->
-
-                <div
-                    class="services-preview"
-                    data-number="01"
-                >
-
-                    <div class="preview-number">
-                        01
-                    </div>
-
-                    <div class="preview-symbol">
-                        +
-                    </div>
-
-
-                    <div class="preview-content">
-
-                        <span>
-                            WEB DESIGN
-                        </span>
-
-                        <h3>
-                            Design care
-                            <br>
-                            atrage atenția.
-                        </h3>
-
-                        <p>
-                            Interfețe moderne, structuri clare
-                            și o experiență vizuală construită
-                            pentru fiecare proiect.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- SERVICES NAVIGATION -->
-
-            <div class="services-navigation">
-
-                <button
-                    class="service-tab active"
-                    type="button"
-                >
-
-                    <span>
-                        01
-                    </span>
-
-                    Web Design
-
-                </button>
-
-
-                <button
-                    class="service-tab"
-                    type="button"
-                >
-
-                    <span>
-                        02
-                    </span>
-
-                    Front-End
-
-                </button>
-
-
-                <button
-                    class="service-tab"
-                    type="button"
-                >
-
-                    <span>
-                        03
-                    </span>
-
-                    Interactive
-
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             SKILLS
-        ======================================== -->
-
-        <section
-            id="skills"
-            class="section skills reveal"
-        >
-
-            <p class="small-text">
-                03 — SKILL-URI
-            </p>
-
-
-            <div class="skills-header">
-
-                <div></div>
-
-                <p class="skills-intro">
-                    Tehnologiile pe care le folosesc pentru
-                    a transforma ideile în experiențe web reale.
+            <div class="approach-point">
+              <span>03</span>
+              <div>
+                <h3>Detalii care fac diferența</h3>
+                <p>
+                  Tipografie atent aleasă, mișcare subtilă și un sistem
+                  vizual coerent, fără efecte inutile.
                 </p>
-
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-
-            <div class="skills-grid">
-
-
-                <!-- HTML -->
-
-                <div class="skill-card">
-
-                    <span class="skill-card-number">
-                        01
-                    </span>
-
-                    <img
-                        src="assets/icon/html.svg"
-                        alt="HTML"
-                    >
-
-                    <div class="skill-card-content">
-
-                        <h3>
-                            HTML
-                        </h3>
-
-                        <p>
-                            Structură clară, semantică și
-                            o bază solidă pentru fiecare proiect.
-                        </p>
-
-                    </div>
-
-                    <span class="skill-card-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
-                <!-- CSS -->
-
-                <div class="skill-card">
-
-                    <span class="skill-card-number">
-                        02
-                    </span>
-
-                    <img
-                        src="assets/icon/css.svg"
-                        alt="CSS"
-                    >
-
-                    <div class="skill-card-content">
-
-                        <h3>
-                            CSS
-                        </h3>
-
-                        <p>
-                            Design, animații, responsive design
-                            și detalii vizuale care fac diferența.
-                        </p>
-
-                    </div>
-
-                    <span class="skill-card-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
-                <!-- JAVASCRIPT -->
-
-                <div class="skill-card">
-
-                    <span class="skill-card-number">
-                        03
-                    </span>
-
-                    <img
-                        src="assets/icon/javascript.svg"
-                        alt="JavaScript"
-                    >
-
-                    <div class="skill-card-content">
-
-                        <h3>
-                            JavaScript
-                        </h3>
-
-                        <p>
-                            Interacțiuni, animații și funcționalitate
-                            care transformă un site într-o experiență.
-                        </p>
-
-                    </div>
-
-                    <span class="skill-card-arrow">
-                        ↗
-                    </span>
-
-                </div>
-
-
+      <!-- PROCESS -->
+      <section class="process section" id="process">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">
+              <span>05</span>
+              <span>PROCES</span>
             </div>
+            <h2>De la prima idee <span class="text-accent">la lansare.</span></h2>
+          </div>
+          <p>
+            Un proces transparent, cu obiective clare și pași stabiliți
+            împreună.
+          </p>
+        </div>
 
-        </section>
-
-
-        <!-- ========================================
-             PROCESS
-        ======================================== -->
-
-        <section
-            id="process"
-            class="section process-section reveal"
-        >
-
-            <p class="small-text">
-                04 — PROCES
+        <div class="process-grid">
+          <article class="process-card">
+            <span class="process-number">01</span>
+            <h3>Descoperire</h3>
+            <p>
+              Înțelegem afacerea, publicul și ceea ce trebuie să rezolve
+              viitorul site.
             </p>
-
-
-            <div class="process">
-
-
-                <!-- STEP 01 -->
-
-                <div class="process-step">
-
-                    <span>
-                        01
-                    </span>
-
-                    <div class="process-line"></div>
-
-                    <div class="process-content">
-
-                        <h3>
-                            Ideea
-                        </h3>
-
-                        <p>
-                            Începem cu ideea, scopul proiectului
-                            și ceea ce trebuie să transmită.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- STEP 02 -->
-
-                <div class="process-step">
-
-                    <span>
-                        02
-                    </span>
-
-                    <div class="process-line"></div>
-
-                    <div class="process-content">
-
-                        <h3>
-                            Design
-                        </h3>
-
-                        <p>
-                            Transformăm ideea într-o structură vizuală
-                            clară, modernă și potrivită proiectului.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- STEP 03 -->
-
-                <div class="process-step">
-
-                    <span>
-                        03
-                    </span>
-
-                    <div class="process-line"></div>
-
-                    <div class="process-content">
-
-                        <h3>
-                            Development
-                        </h3>
-
-                        <p>
-                            Construiesc site-ul și adaug funcționalitatea,
-                            animațiile și interacțiunile necesare.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- STEP 04 -->
-
-                <div class="process-step">
-
-                    <span>
-                        04
-                    </span>
-
-                    <div class="process-line"></div>
-
-                    <div class="process-content">
-
-                        <h3>
-                            Launch
-                        </h3>
-
-                        <p>
-                            Verificăm ultimele detalii, optimizăm
-                            experiența și proiectul este gata de lansare.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ========================================
-             CONTACT
-        ======================================== -->
-
-        <section
-            id="contact"
-            class="section contact reveal"
-        >
-
-            <p class="small-text">
-                05 — CONTACT
+          </article>
+          <article class="process-card">
+            <span class="process-number">02</span>
+            <h3>Concept</h3>
+            <p>
+              Stabilim structura, direcția vizuală și conținutul
+              potrivit proiectului.
             </p>
+          </article>
+          <article class="process-card">
+            <span class="process-number">03</span>
+            <h3>Dezvoltare</h3>
+            <p>
+              Construim paginile și implementăm funcționalitățile
+              agreate.
+            </p>
+          </article>
+          <article class="process-card">
+            <span class="process-number">04</span>
+            <h3>Lansare</h3>
+            <p>
+              Verificăm afișarea, funcționarea și pregătim publicarea
+              proiectului.
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <!-- ABOUT -->
+      <section class="about section" id="about-details">
+        <div class="about-visual">
+          <div class="about-graphic">
+            <span class="about-graphic-top">VEH4SES® / EST. DIGITAL</span>
+            <span class="about-graphic-symbol">V<span>4</span></span>
+            <span class="about-graphic-bottom">THOUGHTFUL BY DESIGN.</span>
+          </div>
+        </div>
 
-            <div class="contact-card">
+        <div class="about-content">
+          <div class="section-label">
+            <span>06</span>
+            <span>DESPRE VEH4SES</span>
+          </div>
 
+          <h2>
+            O abordare independentă.
+            <span class="text-accent">Atenție la fiecare detaliu.</span>
+          </h2>
 
-                <!-- CONTACT INFO -->
+          <p>
+            VEH4SES este un proiect independent dedicat creării de
+            experiențe web moderne. Combinăm designul, structura și
+            dezvoltarea pentru a transforma ideile în pagini digitale
+            clare și funcționale.
+          </p>
 
-                <div class="contact-info">
+          <p>
+            Fiecare proiect începe cu o discuție despre ce ai nevoie
+            și ce vrei să obții — nu cu o soluție standard aplicată tuturor.
+          </p>
 
-                    <div>
+          <a class="text-link" href="#contact">
+            Hai să discutăm despre afacerea ta <span>↗</span>
+          </a>
+        </div>
+      </section>
 
-                        <span class="contact-label">
-                            AI UN PROIECT?
-                        </span>
+      <!-- FAQ -->
+      <section class="faq section" id="faq">
+        <div class="section-heading">
+          <div>
+            <div class="section-label">
+              <span>07</span>
+              <span>ÎNTREBĂRI FRECVENTE</span>
+            </div>
+            <h2>Înainte să <span class="text-accent">începem.</span></h2>
+          </div>
+        </div>
 
-                        <h2>
-                            Hai să-l
-                            <br>
-                            construim.
-                        </h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Ce tipuri de site-uri realizați?</summary>
+            <p>
+              Site-uri de prezentare, landing pages, redesign-uri și
+              magazine online. Soluția se stabilește în funcție de
+              obiectivele și complexitatea proiectului.
+            </p>
+          </details>
 
-                        <p>
-                            Ai o idee, un proiect sau un site
-                            care are nevoie de o schimbare?
-                            Spune-mi ce ai în minte.
-                        </p>
+          <details class="faq-item">
+            <summary>Cât costă un site?</summary>
+            <p>
+              Costul depinde de numărul de pagini, funcționalități,
+              conținut și cerințele proiectului. După ce discutăm
+              cerințele, poți primi o ofertă adaptată.
+            </p>
+          </details>
 
-                    </div>
+          <details class="faq-item">
+            <summary>Cât durează realizarea unui site?</summary>
+            <p>
+              Durata depinde de complexitate, materialele disponibile
+              și timpul necesar pentru feedback. Termenul se stabilește
+              înainte de începerea lucrului.
+            </p>
+          </details>
 
+          <details class="faq-item">
+            <summary>Pot solicita redesign pentru site-ul existent?</summary>
+            <p>
+              Da. Putem analiza structura și aspectul actual, apoi
+              stabili ce merită păstrat, îmbunătățit sau reconstruit.
+            </p>
+          </details>
 
-                    <div class="contact-decoration">
+          <details class="faq-item">
+            <summary>Ce trebuie să pregătesc înainte de colaborare?</summary>
+            <p>
+              Este suficient să ne explici ce face afacerea ta și ce
+              ai nevoie de la site. Textele, imaginile și restul
+              materialelor le putem discuta pe parcurs.
+            </p>
+          </details>
+        </div>
+      </section>
 
-                        <span class="contact-line"></span>
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact-background">
+          <span class="contact-orbit contact-orbit-one"></span>
+          <span class="contact-orbit contact-orbit-two"></span>
+        </div>
 
-                        <span class="contact-dot"></span>
+        <div class="contact-content">
+          <div class="section-label">
+            <span>08</span>
+            <span>CONTACT</span>
+          </div>
 
-                        <span class="contact-line short"></span>
+          <span class="contact-kicker">AI O IDEE ÎN MINTE?</span>
 
-                    </div>
+          <h2>
+            Hai să construim
+            <span class="text-accent">ceva relevant.</span>
+          </h2>
 
-                </div>
+          <p>
+            Povestește-mi despre afacerea ta și despre site-ul
+            pe care îl ai în minte. Îți voi răspunde cât mai curând.
+          </p>
 
+          <form
+            class="quote-form"
+            action="https://formsubmit.app/f/5qgu9c85qf"
+            method="POST"
+          >
+            <input type="hidden" name="_subject"
+              value="Solicitare nouă de ofertă — VEH4SES">
 
-                <!-- CONTACT FORM -->
-
-                <form
-                    id="contactForm"
-                    class="contact-form"
-                    action="https://formspree.io/f/maeqqyrr"
-                    method="POST"
-                >
-
-
-                    <!-- NAME + EMAIL -->
-
-                    <div class="form-row">
-
-
-                        <div class="form-group">
-
-                            <label for="name">
-                                Nume
-                            </label>
-
-                            <input
-                                id="name"
-                                type="text"
-                                name="name"
-                                placeholder="Numele tău"
-                                autocomplete="name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                id="email"
-                                type="email"
-                                name="email"
-                                placeholder="email@exemplu.ro"
-                                autocomplete="email"
-                                required
-                            >
-
-                        </div>
-
-
-                    </div>
-
-
-                    <!-- SUBJECT -->
-
-                    <div class="form-group">
-
-                        <label for="subject">
-                            Subiect
-                        </label>
-
-                        <input
-                            id="subject"
-                            type="text"
-                            name="subject"
-                            placeholder="Despre ce este proiectul?"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Mesaj
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            placeholder="Spune-mi câteva detalii..."
-                            required
-                        ></textarea>
-
-                    </div>
-
-
-                    <!-- SUBMIT -->
-
-                    <button
-                        id="contactSubmit"
-                        type="submit"
-                    >
-                        Trimite mesajul
-                    </button>
-
-
-                    <div
-                        id="formStatus"
-                        class="form-status"
-                        aria-live="polite"
-                    ></div>
-
-                </form>
-
+            <div class="form-field">
+              <label for="quote-name">Numele tău</label>
+              <input id="quote-name" type="text" name="name"
+                placeholder="Ex. Andrei Pop" autocomplete="name" required>
             </div>
 
-        </section>
+            <div class="form-field">
+              <label for="quote-email">Adresa de email</label>
+              <input id="quote-email" type="email" name="email"
+                placeholder="nume@exemplu.ro" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="quote-service">De ce tip de site ai nevoie?</label>
+              <select id="quote-service" name="tip_site" required>
+                <option value="" disabled selected>Alege un serviciu</option>
+                <option value="Site de prezentare">Site de prezentare</option>
+                <option value="Redesign">Redesign site existent</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Magazin online">Magazin online</option>
+                <option value="Nu sunt sigur">Am nevoie de îndrumare</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="quote-message">Detalii despre proiect</label>
+              <textarea id="quote-message" name="message" rows="5"
+                maxlength="3000"
+                placeholder="Spune-mi câteva lucruri despre afacerea și ideea ta..."
+                required></textarea>
+            </div>
+
+            <input type="text" name="_gotcha" tabindex="-1"
+              autocomplete="off" aria-hidden="true" class="form-honeypot">
+
+            <button class="button button-primary form-submit" type="submit">
+              Trimite solicitarea <span>↗</span>
+            </button>
+
+            <p class="form-privacy">
+              Datele sunt folosite pentru a răspunde solicitării tale.
+            </p>
+          </form>
+
+          <div class="contact-alternatives">
+            <span>Sau contactează-mă direct</span>
+
+            <a class="button button-secondary"
+              href="https://wa.me/40741664940?text=Buna%21%20Sunt%20interesat%20de%20serviciile%20VEH4SES."
+              target="_blank" rel="noopener noreferrer">
+              WhatsApp <span>↗</span>
+            </a>
+
+            <a class="text-link"
+              href="mailto:veh4ses@gmail.com?subject=Solicitare%20oferta%20VEH4SES">
+              veh4ses@gmail.com
+            </a>
+          </div>
+
+          <span class="contact-note">
+            Fără obligații. Începem cu o discuție.
+          </span>
+        </div>
+      </section>
 
     </main>
 
-
-    <!-- ========================================
-         FOOTER
-    ======================================== -->
-
+    <!-- FOOTER -->
     <footer class="footer">
+      <div class="footer-main">
+        <a class="brand footer-brand" href="#top">
+          VEH4SES<span class="brand-mark">®</span>
+          <span class="brand-dot"></span>
+        </a>
 
-        <div class="footer-top">
+        <p>Experiențe digitale construite cu intenție.</p>
 
+        <a class="footer-email" href="mailto:veh4ses@gmail.com">
+          veh4ses@gmail.com <span>↗</span>
+        </a>
+      </div>
 
-            <div class="footer-brand">
+      <div class="footer-bottom">
+        <span>
+          © <span id="current-year">2026</span> VEH4SES.
+          Toate drepturile rezervate.
+        </span>
 
-                <a
-                    href="#home"
-                    class="logo"
-                >
-                    VEH4SES<span>.</span>
-                </a>
-
-                <p>
-                    Construiesc experiențe web moderne,
-                    interactive și gândite cu atenție la detalii.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">
-                    Acasă
-                </a>
-
-                <a href="#about">
-                    Despre
-                </a>
-
-                <a href="#services">
-                    Ce fac
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-            </div>
-
+        <div class="footer-links">
+          <a href="#services">Servicii</a>
+          <a href="#work">Proiecte</a>
+          <a href="#contact">Contact</a>
         </div>
 
-
-        <div class="footer-bottom">
-
-            <span>
-                © 2026 VEH4SES. All rights reserved.
-            </span>
-
-            <span>
-                Built with HTML / CSS / JavaScript
-            </span>
-
-        </div>
-
+        <a href="#top" class="back-to-top">Înapoi sus ↑</a>
+      </div>
     </footer>
 
-
-    <!-- ========================================
-         JAVASCRIPT
-    ======================================== -->
-
-    <script src="script.js"></script>
-
+  </div>
 </body>
-
 </html>
